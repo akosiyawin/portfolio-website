@@ -1,0 +1,147 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #002639;
+  color: #fff;
+  padding: 4vh 2vw;
+
+  &__me {
+    max-width: 30vw;
+    min-height: 80%;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 0 2rem;
+  }
+
+  &__info {
+    max-width: 40vw;
+    margin: 0 2rem;
+
+    h1 {
+      margin-bottom: 15px;
+      font-size: 5rem;
+      font-family: Montserrat, sans-serif;
+      font-weight: bolder;
+    }
+
+    .description {
+      letter-spacing: 0.2rem;
+      font-size: 1.8rem;
+      text-align: justify;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+  }
+
+  .tabs {
+    display: flex;
+    list-style: none;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+
+    li {
+      font-size: 2rem;
+      margin-right: 2vw;
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+      position: relative;
+      cursor: pointer;
+      font-weight: bolder;
+      white-space: nowrap;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 25%;
+        bottom: 0;
+        border-bottom: 3px solid #fff;
+      }
+
+      &.active {
+        &:before {
+          width: 100%;
+          border-color: $secondary;
+        }
+
+        color: $secondary;
+      }
+    }
+  }
+
+  .experience__content,
+  .education__content,
+  .achievements__content {
+    display: none;
+  }
+
+  .skills__content {
+    margin-bottom: 15px;
+
+    h3 {
+      font-weight: 200;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.767);
+
+    }
+  }
+}
+
+@media screen and (max-width: 1568px) {}
+
+@media screen and (max-width: 1268px) {}
+
+@media screen and (max-width: 1068px) {
+  .about__me {
+    max-width: 40vw;
+  }
+
+  .about__info {
+    max-width: 50vw;
+
+    h1 {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .about {
+    height: fit-content;
+    flex-direction: column;
+
+    &__me {
+      min-width: 55vw;
+    }
+
+    &__info {
+      margin-top: 25px;
+      max-width: 80vw;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 668px) {
+  .about__info {
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 488px) {}
+
+
+@media screen and (max-height:568px) {
+  .about {
+    height: fit-content;
+  }
+}

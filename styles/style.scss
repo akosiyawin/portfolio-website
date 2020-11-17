@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary: #012e44;
+$dark: #0d0e0f;
+$secondary: #e81a62;
+$shadow: 0 19px 1.8rem rgb(0, 0, 0/ 10%);
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+}
+
+p,
+a,
+i,
+li {
+  font-size: 1.6rem;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+.light-color {
+  color: $secondary;
+}
+
+.btn {
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 2vh 3vw;
+  font-size: 1vw;
+  font-weight: bolder;
+  border-radius: 3px;
+  letter-spacing: .15rem;
+  cursor: pointer;
+}
+
+.bg-light {
+  background: $secondary;
+}
+
+.bg-dark {
+  background: $primary;
+  box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1068px) {
+  .btn {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 2vw;
+    padding: 1.8vh 3vw;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .btn {
+    font-size: 2.8vw;
+  }
+}
+
+@import "Nav";
+@import "Landing";
+@import "About";
+@import "Portfolio";
+@import "Contact";
+@import "Footer";
